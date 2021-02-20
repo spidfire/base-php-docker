@@ -18,7 +18,7 @@ RUN apt-get update -y && \
 	mariadb-client \
 	cron \
 	&& curl -sL https://deb.nodesource.com/setup_15.x | sudo -E bash - \
-	&& apt-get install -y nodejs
+	&& apt-get install -y nodejs \
 	&& apt-get install -y  libmagickwand-dev --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 
